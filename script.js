@@ -6,9 +6,9 @@ document.getElementById('task-form').addEventListener('submit', function(event) 
     this.reset();
 });
 
-function addTask(name, date) {
+function addTask(taskName, dueDate) {
     const taskList = document.querySelector('#task-list ul');
-    const li = document.createElement('li');
-    li.textContent = `${name} - Hạn chót: ${date}`;
-    taskList.appendChild(li);
+    const listItem = document.createElement('li');
+    listItem.textContent = `${taskName} - Hạn chót: ${dueDate}`;
+    taskList.appendChild(listItem);
 }
