@@ -9,6 +9,6 @@ document.getElementById('task-form').addEventListener('submit', function(event) 
 function addTask(taskName, dueDate) {
     const taskList = document.querySelector('#task-list ul');
     const listItem = document.createElement('li');
-    listItem.textContent = `${taskName} - Hạn chót: ${dueDate}`;
+    listItem.textContent = `${taskName} - Due: ${dueDate}`;
     taskList.appendChild(listItem);
 }
