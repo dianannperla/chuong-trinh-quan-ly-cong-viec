@@ -7,8 +7,8 @@ document.getElementById('task-form').addEventListener('submit', function(event) 
 });
 
 function addTask(taskName, deadline) {
-    const taskList = document.querySelector('#task-list'); // Fixed variable naming
+    const taskListElement = document.querySelector('#task-list'); // Improved variable naming
     const listItem = document.createElement('li');
     listItem.textContent = `${taskName} - Due: ${deadline}`;
-    taskList.appendChild(listItem);
+    taskListElement.appendChild(listItem);
 }
